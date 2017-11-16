@@ -50,20 +50,9 @@
 
 7、sess.run()可以除了必填一个Tensor的变量名，如果网络中有placeholder的占位符变量，还可以选填一个feed_dict作为占位符的输入。并且注意，并不是所有的占位符变量都需要feed，tensorflow会自动屏蔽掉没有填入的占位符相关的操作。这点在训练神经网络的时候很重要。有时候网络已经训练成功，只需要使用网络进行推理的时候，可以不在传入label，这个时候，跟label相关的最小化loss的操作都会失效。也就不会在改变网络中已经计算完成的变量了
 
-7、以一个持续计算斐波那契数列的代码来演示，变量的修改，保存，读取，feed_dict。斐波那契的计算用的矩阵乘法：
+8、以一个持续计算斐波那契数列的代码来演示，变量的修改，保存，读取，feed_dict。斐波那契的计算用的矩阵乘法：
 
-$
-\begin{bmatrix}
-1&1\\ 
-1&0
-\end{bmatrix}^{n}\begin{bmatrix}
-fib_{2}\\ 
-fib_{1}
-\end{bmatrix}=\begin{bmatrix}
-fib_{n+2}\\ 
-fib_{n+1}
-\end{bmatrix}
-$
+![](http://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%201%261%5C%5C%201%260%20%5Cend%7Bbmatrix%7D%5E%7Bn%7D%5Cbegin%7Bbmatrix%7D%20fib_%7B2%7D%5C%5C%20fib_%7B1%7D%20%5Cend%7Bbmatrix%7D%3D%5Cbegin%7Bbmatrix%7D%20fib_%7Bn&plus;2%7D%5C%5C%20fib_%7Bn&plus;1%7D%20%5Cend%7Bbmatrix%7D)
 
 代码如下：
 首先设计斐波那契的类：
