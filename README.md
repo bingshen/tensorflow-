@@ -52,7 +52,7 @@
 
 8、以一个持续计算斐波那契数列的代码来演示，变量的修改，保存，读取，feed_dict。斐波那契的计算用的矩阵乘法：
 
-![](http://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%201%261%5C%5C%201%260%20%5Cend%7Bbmatrix%7D%5E%7Bn%7D%5Cbegin%7Bbmatrix%7D%20fib_%7B2%7D%5C%5C%20fib_%7B1%7D%20%5Cend%7Bbmatrix%7D%3D%5Cbegin%7Bbmatrix%7D%20fib_%7Bn&plus;2%7D%5C%5C%20fib_%7Bn&plus;1%7D%20%5Cend%7Bbmatrix%7D)
+![](formula/fib.gif)
 
 代码如下：
 首先设计斐波那契的类：
